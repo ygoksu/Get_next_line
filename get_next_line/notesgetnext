@@ -1,0 +1,44 @@
+https://baigal.medium.com/born2beroot-e6e26dfb50ac
+
+/*int	main()
+{
+	int		fd = open("src", O_RDONLY);
+	int		dsfd = open("dst", O_RDWR);
+	int     fd1 = open("src1", O_RDONLY);
+    int     dsfd1 = open("dst1", O_RDWR);
+	int     fd2 = open("src2", O_RDONLY);
+    int     dsfd2 = open("dst2", O_RDWR);
+	int		i = 0;
+	char	**str;
+	str = (char **)malloc(sizeof(char*) * 15);
+	while (i < 16)
+	{
+		str[i] = get_next_line(fd);
+		write(dsfd, str[i], ft_strlen(str[i]));
+		i++;
+		str[i] = get_next_line(fd1);
+		write(dsfd1, str[i], ft_strlen(str[i]));
+		i++;
+		str[i] = get_next_line(fd2);
+        write(dsfd2, str[i], ft_strlen(str[i]));
+        i++;
+	}
+	i = 0;
+	while (str[i] != 0)
+	{i++;
+		printf("%s\n",str[i]);
+		
+	}
+}
+
+/*int	main()
+{
+	int		fd = open("src.txt", O_RDONLY);
+	char *a;
+	int i = 0;
+	while (a != 0)
+	{	if(I != 0)
+		printf("%d. %s\n",i++,a);
+		a=get_next_line(fd);
+	}
+}*/

@@ -1,0 +1,6 @@
+first line
+sec line
+third
+for
+fi
+s
